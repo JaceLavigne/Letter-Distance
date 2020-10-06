@@ -17,6 +17,14 @@ int wordDistance(string str1, string str2){
         for(long unsigned int i=0; i<str1.size(); i++){
           x+=abs(int(cstr1[i])-int(cstr2[i]));
         }
+	// This is fine to display the result of the function
         cout<<x<<endl;
-	      return 0;
+	// But you should always return the value at the bottom of the function
+	      return x;
+	// This makes it so that when you call the function later, you can setup
+	// something like this
+	// int placeholder = wordDistance("someword","someotherword")
+	// and the result of the function will be stored in the placeholder variable
+	// OR, it can be a part of an if function like this
+	// if (wordDistance("someword","someotherword")==0){//stuff}
 }
