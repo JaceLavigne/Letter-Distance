@@ -18,5 +18,5 @@ int wordDistance(string str1, string str2){
           x+=abs(int(cstr1[i])-int(cstr2[i]));
         }
         cout<<x<<endl;
-	      return 0;
+	      return x;
 }
